@@ -54,25 +54,6 @@ In this milestone, we focused on defining the structure of product data and crea
 - Image Upload Handling: Implement a cloud-based solution (e.g., Cloudinary, AWS S3) for better image management. make this short
 
 
-=======
-### Run the app locally by cloning the repository, installing dependencies, and starting the server.
-
-**How to Run:**
--
-Clone the repository:
-
-> -git clone <repository_url>
-
-Install dependencies:
-
->npm install  
-
-Start the application:
-
-> npm start
-
-> Access the app at http://localhost:3000 in your browser.
-
 ## Milestone 6 Progress:
 
 ### Steps Completed:
@@ -98,4 +79,39 @@ Added functionality to handle secure user data storage.
 The repository is publicly accessible.
 
 Link to the repository: https://github.com/aditi-560/E-commerce-follow-along.git
+
+
+
+
+
+Welcome to Milestone 11! 🌟
+
+Today, we will make our home page that will display all the products dynamic. We will write an endpoint that will send all the data that was saved in mongodb using add products page earlier.
+
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+How to write an endpoint that will send data from extract and send data from mongodb.
+how to receive data at frontend -How to display that data dynamically using product card created earlier.
+Steps for Milestone 11📝
+Write an endpoint that will send all products data to frontend In frontend write an function to get all the data Display these data dynamically passing to product card component
+
+=======
+### Run the app locally by cloning the repository, installing dependencies, and starting the server.
+
+**How to Run:**
+-
+Clone the repository:
+
+> -git clone <repository_url>
+
+Install dependencies:
+
+>npm install  
+
+Start the application:
+
+> npm start
+
+> Access the app at http://localhost:3000 in your browser.
 
