@@ -12,7 +12,7 @@
 //         <Route path="/SignUp" element={<SignupPage/>}/>
 
 //       </Routes>
-//     </BrowserRouter>
+//     </BrowserRouter>s
 //   )
 // }
 
