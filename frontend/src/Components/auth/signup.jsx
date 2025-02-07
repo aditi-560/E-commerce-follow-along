@@ -46,14 +46,17 @@ const Signup = () => {
         "Accept": "any",
       },
     };
-//axios request
-    axios.post("http://localhost:8000/api/v2/user/create-user", newForm, config).then((res)=>{
-      console.log(res.data);
-    }).catch((err)=>{
-      console.log(err);
-    })
+ // Axios request to backend
+ axios
+ .post("http://localhost:8000/api/v2/user/create-user", newForm, config)
+ .then((res) => {
+   console.log(res.data); // Success response from server
+ })
+ .catch((err) => {
+   console.error(err.response ? err.response.data : err.message); // Error handling
+ });
 };
-return (
+  return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
@@ -127,7 +130,7 @@ return (
                     errors.password ? "border-red-500" : "border-gray-300"
                   } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm`}
                 />
-{visible ? (
+                {visible ? (
                   <AiOutlineEye
                     className="absolute right-2 top-2 cursor-pointer"
                     size={25}
@@ -180,7 +183,7 @@ return (
             </div>
             <div>
               <button
-                type="submit"
+                type="submit" onClick={handleSubmit}
                 className="group relative w-full h-[40px] flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
               >
                 Submit
