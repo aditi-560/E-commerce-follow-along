@@ -112,6 +112,28 @@ Write an endpoint that will send all products with user mail to frontend In fron
 Note:- This lesson will help you in understanding How to Filter the data with particular constrains and send it to client.
 
 
+Welcome to Milestone 13! 🌟
+
+Today, we will add an functionality to edit the uploaded products. We will add edit button and then write and backend endpoint to update the new details inside MongoDB database.
+
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+How to write an endpoint that will update the existing data in MongoDB.
+how to auto fill the form with previous data and give option to edit.
+Steps for Milestone 13📝
+Write an endpoint that will receive new data and update the existing data inside MondoDB. In frontend we will add an edit button to the product card. When click on edit we will send the data to form and make it auto fill and have option to edit those data and save.
+
+Note:- This lesson will help you in understanding how to perform update operation in detailed.
+
+Submission Guidelines 📥
+
+Push your code to your GitHub repository.
+Ensure your repository is publicly accessible.
+Update the README file to summarize your progress for Milestone 13.
+Share the repository link in the assignment submission section.
+
+
 
 =======
 ### Run the app locally by cloning the repository, installing dependencies, and starting the server.
