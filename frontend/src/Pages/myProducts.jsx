@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Product from "../Components/auth/Product";
 
 export default function MyProducts() {
