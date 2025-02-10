@@ -124,14 +124,19 @@ how to auto fill the form with previous data and give option to edit.
 Steps for Milestone 13📝
 Write an endpoint that will receive new data and update the existing data inside MondoDB. In frontend we will add an edit button to the product card. When click on edit we will send the data to form and make it auto fill and have option to edit those data and save.
 
-Note:- This lesson will help you in understanding how to perform update operation in detailed.
+Welcome to Milestone 14! 🌟
 
-Submission Guidelines 📥
+Today, we will add an functionality to delete button to the product data and write and backend endpoint to delete the product with the use of ID.
 
-Push your code to your GitHub repository.
-Ensure your repository is publicly accessible.
-Update the README file to summarize your progress for Milestone 13.
-Share the repository link in the assignment submission section.
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+How to write an endpoint that delete the product with specific ID from MongoDB.
+Steps for Milestone 14📝
+Write an endpoint that will Delete the data form MongoDB using ID. In frontend we will add an delete button to the product card. When click on delete button we will send the product id to server endpoint.
+
+
+
 
 
 
