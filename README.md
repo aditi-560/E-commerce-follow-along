@@ -135,7 +135,27 @@ How to write an endpoint that delete the product with specific ID from MongoDB.
 Steps for Milestone 14📝
 Write an endpoint that will Delete the data form MongoDB using ID. In frontend we will add an delete button to the product card. When click on delete button we will send the product id to server endpoint.
 
+Welcome to Milestone 15! 🌟
 
+Today, we will create and Navbar component and add nav component to every screen.
+
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+How to create and Nav component.
+How to reuse the same component in multiple pages.
+Steps for Milestone 15📝
+Create an new Nav component with links to all pages:
+
+Home
+My-products
+Add product
+cart
+Make the Navbar responsive to all screen sizes.
+
+We will add the nav component to all the pages and make the navigations to all this pages smooth and easy.
+
+This lesson will help you in understanding how to create navbar and help to navigate to multiple pages in application.
 
 
 
