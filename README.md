@@ -157,6 +157,15 @@ We will add the nav component to all the pages and make the navigations to all t
 
 This lesson will help you in understanding how to create navbar and help to navigate to multiple pages in application.
 
+Welcome to Milestone 16! 🌟
+
+Today, we will create an product info page that display all the product data and choose quantity and add to card button.
+
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+How to new page to display each product.
+How to add quantity and add to card button.
 
 
 
