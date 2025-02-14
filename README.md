@@ -182,6 +182,20 @@ Write the cart schema to store products
 Write an endpoint to store receive and store product details in cart
 
 
+Welcome to Milestone 18! 🌟
+
+Today, we will create an Backend endpoint for the cart page. We will write the backend logic to fetch all the products inside user cart to display in cart page.
+
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+Create an endpoint to receive request from cart page.
+Create an backend endpoint to fetch all the products inside cart with user mail.
+Steps for Milestone 18📝
+Create an Backend endpoint for cart page
+Write and endpoint to get products inside cart for user
+
+
 =======
 ### Run the app locally by cloning the repository, installing dependencies, and starting the server.
 
