@@ -168,6 +168,19 @@ How to new page to display each product.
 How to add quantity and add to card button.
 
 
+Welcome to Milestone 17! 🌟
+
+Today, we will write an backend endpoint to add products to cart and store in database.
+
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+Edit the user schema to store cart products .
+Write an end point to receive the product details and store in database.
+Steps for Milestone 17📝
+Write the cart schema to store products
+Write an endpoint to store receive and store product details in cart
+
 
 =======
 ### Run the app locally by cloning the repository, installing dependencies, and starting the server.
