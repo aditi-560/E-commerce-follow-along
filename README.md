@@ -195,6 +195,22 @@ Steps for Milestone 18📝
 Create an Backend endpoint for cart page
 Write and endpoint to get products inside cart for user
 
+Welcome to Milestone 19! 🌟
+
+Today, we will create an frontend page UI for cart and write an endpoint to increase and decrease the quantity of product inside cart;
+
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+Create an cart page that display the products inside cart using endpoint we build in milestone 18.
+For each product add an option to increase and decrease quantity using + and - buttons.
+Write an endpoint to increase and decrease the quantity
+Steps for Milestone 19📝
+create cart frontend page and display the products
+For each product add an option to increase and decrease quantity using + and - buttons.
+Create an Backend endpoint for increase and decrease quantity
+
+
 
 =======
 ### Run the app locally by cloning the repository, installing dependencies, and starting the server.
