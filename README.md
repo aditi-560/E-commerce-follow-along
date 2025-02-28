@@ -210,6 +210,8 @@ create cart frontend page and display the products
 For each product add an option to increase and decrease quantity using + and - buttons.
 Create an Backend endpoint for increase and decrease quantity
 
+
+# Milestone 20
 Learning Goals 🎯
 By the end of this milestone, you will:
 
@@ -223,6 +225,49 @@ display profile photo, name and email in one section
 In another section display address and add an button called "Add address"
 If there are no address display "No address found"
 This lesson will help you in understanding how to display profile page.
+
+# Milestone 21
+Welcome to Milestone 21! 🌟
+
+Today, we will create an frontend page form for address input.
+
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+Create an frontend form that will will take address.
+Take country, city, address1, address2, zip code, address type
+Steps for Milestone 21📝
+create address form frontend page
+Create an state that will store input address
+when we click on add address in profile it should navigate to this form page.
+
+# MileStone 22
+
+Welcome to Milestone 22! 🌟
+
+Today, we will create an backend endpoint that will save the address inside user profile in database.
+
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+Create an backend endpoint that will store the address inside user profile in database.
+Steps for Milestone 22📝
+You need to create an endpoint that will receive the address from address form in frontend
+Add the address to the address array inside user collection.
+
+
+# MileStone 23
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+We will add an button inside cart called "Place order"
+We will create an select address page where we will display all the address and ask to select delivery address.
+We will write mongoose schema for storing orders details.
+Steps for Milestone 23📝
+Create an placeorder button inside cart page and navigate to select address page when clicked.
+Create and select address page that will display all the available address and have an option to select one address.
+Write an backend endpoint that will send all the addresses of the user.
+Note:- This lesson will help you in understanding How to implement place order functionality.
 
 
 =======
