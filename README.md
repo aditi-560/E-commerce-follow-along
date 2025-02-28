@@ -269,6 +269,22 @@ Create and select address page that will display all the available address and h
 Write an backend endpoint that will send all the addresses of the user.
 Note:- This lesson will help you in understanding How to implement place order functionality.
 
+# MileStone 24
+
+elcome to Milestone 24! 🌟
+
+Today, we will make our create an order conformation page in frontend where will display products ordering and address selected and total price details.
+
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+We will create an order conformation page.
+Steps for Milestone 24📝
+First we will display all the products we are ordering
+Next we will display the address user selected to deliver
+We will display the total value of the cart
+We will have an place order button at the bottom.
+
 
 =======
 ### Run the app locally by cloning the repository, installing dependencies, and starting the server.
