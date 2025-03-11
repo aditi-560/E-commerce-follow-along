@@ -301,6 +301,22 @@ using order schema you created earlier you will store order details in mongodb o
 This lesson will help you in understanding how to create an endpoint that place order.
 
 
+Welcome to Milestone 26! 🌟
+
+Today, we will create an backend endpoint for place order.
+
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+Create an backend endpoint that will help getting all the orders of the user.
+Steps for Milestone 26📝
+You need to create an endpoint that will receive the user mail
+You will get the mail of the user using that you need to retrive the _id of the user
+Using that _id you need to get all the orders of that user
+Send all the users orders in the response.
+This lesson will help you in understanding how to get all the users orders.
+
+
 =======
 ### Run the app locally by cloning the repository, installing dependencies, and starting the server.
 
