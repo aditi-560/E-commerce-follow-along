@@ -285,6 +285,21 @@ Next we will display the address user selected to deliver
 We will display the total value of the cart
 We will have an place order button at the bottom.
 
+Welcome to Milestone 25! 🌟
+
+Today, we will create an backend endpoint for place order.
+
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+Create an backend endpoint that will help in placing the order.
+Steps for Milestone 25📝
+You need to create an endpoint that will receive the products, user, address details
+You will get the mail of the user using that you need to retrive the _id of the user
+For each product the order will be different with same address
+using order schema you created earlier you will store order details in mongodb order collection
+This lesson will help you in understanding how to create an endpoint that place order.
+
 
 =======
 ### Run the app locally by cloning the repository, installing dependencies, and starting the server.
