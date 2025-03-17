@@ -38,6 +38,8 @@ const OrderConfirmation = () => {
                 const cartResponse = await axios.get('http://localhost:8000/api/v2/product/cartproducts', {
                     params: { email: email },
                 });
+                console.log('Cart Response:', cartResponse);
+
                 if (cartResponse.status !== 200) {
                     throw new Error(`Failed to fetch cart products. Status: ${cartResponse.status}`);
                 }
