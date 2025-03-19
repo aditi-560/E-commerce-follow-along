@@ -317,6 +317,68 @@ Send all the users orders in the response.
 This lesson will help you in understanding how to get all the users orders.
 
 
+Welcome to Milestone 26! 🌟
+
+Today, we will create an backend endpoint for place order.
+
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+Create an backend endpoint that will help getting all the orders of the user.
+Steps for Milestone 26📝
+You need to create an endpoint that will receive the user mail
+You will get the mail of the user using that you need to retrive the _id of the user
+Using that _id you need to get all the orders of that user
+Send all the users orders in the response.
+
+Welcome to Milestone 27! 🌟
+
+Today, we will create an frontend page for myorders.
+
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+Create an frontend page that will display all the user orders.
+Steps for Milestone 27📝
+You need to create an my-orders page
+You will send an get request to my-orders endpoint that we created in previous milestone.
+We will send user mail in to endpoint to get all the user orders
+Display all the user orders
+We will add my-orders page in navbar for better navigation.
+
+Welcome to Milestone 28! 🌟
+
+Today, we will add cancel button in my-orders and create an backend endpoint for cancel order.
+
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+The use will be able to cancel the placed orders.
+Steps for Milestone 28📝
+In my-orders page for every order add cancel order button
+If the order is already canceled this button should not be displayed
+You need to create an endpoint that will receive the order-id
+Get the order using this id and mark the status canceled and save
+
+
+Welcome to Milestone 29! 🌟
+
+Today, we will learn how to add online payment gateway to our application using Paypal api.
+
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+Learn how to use PayPal API.
+Learn how to Integrate online payments.
+Steps for Milestone 29📝
+Please create an PayPal account first PayPal developer dashboard
+Once you login you can see an option for an sandbox accounts.
+Copy the UserID of that account and save it.
+In this sandbox accounts you can find your client id copy and save it.
+In your order conformation page you need two options for payment one is COD and another is online payment.
+Create radio buttons to select COD or online payment and when we click on online payment PayPal buttons need to be displayed.
+In next milestone we will write an code to display and use those PayPal online Payments buttons.
+
 =======
 ### Run the app locally by cloning the repository, installing dependencies, and starting the server.
 
