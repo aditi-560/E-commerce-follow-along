@@ -22,7 +22,7 @@ const OrderConfirmation = () => {
         if (!addressId || !email) {
             navigate('/select-address'); // Redirect if no address selected or email missing
             return;
-        }   
+        }          
         const fetchData = async () => {
             try {
                 // Fetch selected address
