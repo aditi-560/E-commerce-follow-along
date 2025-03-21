@@ -379,6 +379,21 @@ In your order conformation page you need two options for payment one is COD and 
 Create radio buttons to select COD or online payment and when we click on online payment PayPal buttons need to be displayed.
 In next milestone we will write an code to display and use those PayPal online Payments buttons.
 
+
+Welcome to Milestone ! 🌟
+
+Today, we will learn how to add online payment gateway to our application using PayPal API. This is an continuous milestone of milestone 29 where you created PayPal account and get the userid.
+
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+Learn how to use PayPal API.
+Learn how to Integrate online payments.
+Steps for Milestone 30📝
+After creating PayPal account and getting the UserID inside sandbox account.
+Implement online payment using PayPal API using the client key you created earlier.
+Download NPM package called react-paypal-js that will provide an component called PayPalScriptProvider which will display online payment methods like credit or debit card etc..,
+
 =======
 ### Run the app locally by cloning the repository, installing dependencies, and starting the server.
 
