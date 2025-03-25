@@ -394,6 +394,23 @@ After creating PayPal account and getting the UserID inside sandbox account.
 Implement online payment using PayPal API using the client key you created earlier.
 Download NPM package called react-paypal-js that will provide an component called PayPalScriptProvider which will display online payment methods like credit or debit card etc..,
 
+
+Welcome to Milestone ! 🌟
+
+Today we will learn how to implement global state management using Redux.
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+How to use redux for global state management
+Implement redux store to store all global states
+Steps for Milestone 31📝
+Install an npm package called react-redux
+create an new folder called store with two files store.js and userActions.js.
+We will store user mail inside global state.
+In store.js file configure an store with userReducer function that will handle global user email state.
+Inside userActions.js file write an function called setEmail that will help in storing email state inside global state.
+In Index.js file make sure to wrap APP component inside provider component with store as props.
+
 =======
 ### Run the app locally by cloning the repository, installing dependencies, and starting the server.
 
