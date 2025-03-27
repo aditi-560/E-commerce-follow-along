@@ -50,7 +50,7 @@ const Signup = () => {
     };
  // Axios request to backend
  axios
- .post("http://localhost:8000/api/v2/user/create-user", newForm, config)
+ .post("http://localhost:9000/api/v2/user/create-user", newForm, config)
  .then((res) => {
    alert("User created successfully!"); // Success message from server
    console.log(res.data); // Success response from server
