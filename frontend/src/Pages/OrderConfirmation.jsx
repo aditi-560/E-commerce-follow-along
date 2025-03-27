@@ -26,7 +26,7 @@ const OrderConfirmation = () => {
         const fetchData = async () => {
             try {
                 // Fetch selected address
-                const addressResponse = await axios.get('http://localhost:8000/api/v2/user/addresses', {
+                const addressResponse = await axios.get('http://localhost:9000/api/v2/user/addresses', {
                     params: { email: email },
                 });
                 if (addressResponse.status !== 200) {
@@ -39,7 +39,7 @@ const OrderConfirmation = () => {
                 }
                 setSelectedAddress(address);
                 // Fetch cart products from /cartproducts endpoint
-                const cartResponse = await axios.get('http://localhost:8000/api/v2/product/cartproducts', {
+                const cartResponse = await axios.get('http://localhost:9000/api/v2/product/cartproducts', {
                     params: { email: email },
                 });
                 if (cartResponse.status !== 200) {
@@ -51,7 +51,7 @@ const OrderConfirmation = () => {
                     product: item.productId._id,
                     name: item.productId.name,
                     price: item.productId.price,
-                    image: item.productId.images.map(imagePath => `http://localhost:8000${imagePath}`),
+                    image: item.productId.images.map(imagePath => `http://localhost:9000${imagePath}`),
                     quantity: item.quantity,
                 }));
                 setCartItems(processedCartItems);
@@ -92,7 +92,7 @@ const OrderConfirmation = () => {
                 paypalOrderData,
             };
             // Send POST request to place orders
-            const response = await axios.post('http://localhost:8000/api/v2/orders/place-order', payload);
+            const response = await axios.post('http://localhost:9000/api/v2/orders/place-order', payload);
             console.log('Orders placed successfully:', response.data);
 
             // Navigate to an order success page or display a success message

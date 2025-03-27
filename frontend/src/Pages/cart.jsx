@@ -1,6 +1,8 @@
+
 import CartProduct from '../Components/auth/CartProduct';
 import NavBar from '../Components/auth/nav';
 import { useNavigate } from 'react-router-dom'; 
+import { useSelector } from 'react-redux';
  
 import { useState, useEffect } from 'react';
 
@@ -8,9 +10,10 @@ const Cart = () => {
 
   const [products, setProducts] = useState([]);
   const navigate = useNavigate(); // Initialize navigate
-
+  const email = useSelector((state) => state.user.email);
   useEffect(() => {
-    fetch(`http://localhost:8000/api/v2/product/cartproducts?email=${'aditisin2223@gmail.com'}`)
+    if (!email) return;
+    fetch(`http://localhost:9000/api/v2/product/cartproducts?email=${'aditisin2223@gmail.com'}`)
       .then((res) => {
         if (!res.ok) {
           throw new Error(`HTTP error! status: ${res.status}`);
