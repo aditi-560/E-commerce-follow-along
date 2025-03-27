@@ -4,6 +4,7 @@ import axios from "axios";
 import NavBar from "../Components/auth/nav";
 import { IoIosAdd } from "react-icons/io";
 import { IoIosRemove } from "react-icons/io";
+import { useSelector } from "react-redux";
 
 export default function ProductDetails() {
     const { id } = useParams();
@@ -11,12 +12,13 @@ export default function ProductDetails() {
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState(null);
 	const [quantity, setQuantity] = useState(1); // 1. Initialize quantity state
-	const email = "aditisin2223@gmail.com";
+	const email = useSelector((state) => state.user.email);
 	useEffect(() => {
 		const fetchProduct = async () => {
+			if (!email) return;
 			try {
 				const response = await axios.get(
-					`http://localhost:8000/api/v2/product/product/${id}`
+					`http://localhost:9000/api/v2/product/product/${id}`
 				);
 				console.log("Fetched product:", response.data.product);
 				setProduct(response.data.product); // Ensure correct state setting
@@ -47,7 +49,7 @@ export default function ProductDetails() {
 	const addtocart = async () => {
 		try {
 			const response = await axios.post(
-				"http://localhost:8000/api/v2/product/cart",
+				"http://localhost:9000/api/v2/product/cart",
 				{
 					userId: email,
 					productId: id,

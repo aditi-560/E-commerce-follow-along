@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import NavBar from "../Components/auth/nav";
+import { useSelector } from "react-redux";
 const CreateAddress = () => {
     const navigate = useNavigate();
+    const email = useSelector((state) => state.user.email);
     const [country, setCountry] = useState("");
     const [city, setCity] = useState("");
     const [address1, setAddress1] = useState("");
@@ -19,11 +21,11 @@ const CreateAddress = () => {
             address2,
             zipCode,
             addressType,
-            email: "aditisin2223@gmail.com"
+            email
         };
         try {
             const response = await axios.post(
-                "http://localhost:8000/api/v2/user/add-address",
+                "http://localhost:9000/api/v2/user/add-address",
                 addressData,
                 {
                     headers: { "Content-Type": "application/json" },
