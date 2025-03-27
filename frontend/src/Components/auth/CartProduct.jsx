@@ -27,7 +27,7 @@ export default function CartProduct({ _id, name, images, quantity, price }) {
 	};
 
 	const updateQuantityVal = (quantity) => {
-		fetch('http://localhost:8000/api/v2/product/cartproduct/quantity', {
+		fetch('http://localhost:9000/api/v2/product/cartproduct/quantity', {
 			method: 'PUT',
 			headers: {
 				'Content-Type': 'application/json',

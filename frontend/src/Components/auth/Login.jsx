@@ -5,8 +5,27 @@ import { useDispatch } from 'react-redux';
   import { setemail } from "../../store/userActions";
 
 const Login = () => {
+  const dispatch = useDispatch();
+   const navigate = useNavigate(); // Initialize navigate
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [visible, setVisible] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post("http://localhost:9000/api/v2/user/login", { email, password }, {withCredentials: true,});
+      console.log(response.data);
+      alert("Logged in successfully!");
+      // Dispatch email to Redux state (token is now handled via cookies)
+      dispatch(setemail(email));
+      // Redirect to home or profile page after successful login
+      navigate("/");
+    } catch (error) {
+      console.error("There was an error logging in!", error);
+    }
+  };
+
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
