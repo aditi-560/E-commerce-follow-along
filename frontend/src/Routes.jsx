@@ -6,7 +6,7 @@ import MyProducts from "./Pages/myProducts.jsx";
 import Cart from "./Pages/cart.jsx";
 import ProductDetails from "./Pages/productDetails.jsx";
 import Profile from "./Pages/profile.jsx";
-import CreateAddress  from "./Pages/createAddress.jsx";
+import CreateAddress  from "./Pages/CreateAddress.jsx";
 import SelectAddress from "./Pages/SelectAddress.jsx";
 import OrderConfirmation from "./Pages/OrderConfirmation.jsx";
 import MyOrdersPage from "./Pages/myorders.jsx";

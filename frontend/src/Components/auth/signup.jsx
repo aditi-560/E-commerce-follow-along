@@ -6,6 +6,7 @@ import axios from "axios";
 import ValidationFormObject from "../../validation";
 import { useDispatch } from 'react-redux';
 import { setemail } from "../../store/userActions";
+
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");

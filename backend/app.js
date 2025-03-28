@@ -10,9 +10,16 @@ const orders = require('./controller/orders');
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors());
+// Middleware for handling CORS
+app.use(
+    cors({
+      origin: "http://localhost:5175", // Frontend URL
+      credentials: true, // Allow credentials (cookies, auth headers)
+    })
+  );
 app.use("/",express.static("uploads"));
 app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
+
 
 // Configuration for environment variables
 if (process.env.NODE_ENV !== "PRODUCTION") {
@@ -21,6 +28,7 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
         path: "backend/config/.env",
     });
 };
+
 // Serve static files for uploads and products
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use('/products', express.static(path.join(__dirname, 'products')));
