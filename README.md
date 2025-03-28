@@ -438,6 +438,35 @@ Use sign method to create an JWT token with mail and ID
 Give maxAge to set expire time
 Add the cookie inside the response that helps you to store the cookie inside browser.
 
+Welcome to Milestone 34! 🌟
+
+Today, we will learn how to validate the JWT token that was stored while inside cookie.
+
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+Learn how to extract the JWT token from the cookie and send it to the server.
+How to validate the JWT token received from the client.
+Steps for Milestone 34📝
+Get the token from the browser cookie and send it to the server
+In backend write an middleware function to validate that JWT token
+In every page make sure that this steps will happen so that user cannot go to that page with out login
+
+Welcome to Milestone 35! 🌟
+
+Today, we will finally deploy your project.
+
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+Learn how to deploy your frontend.
+How to deploy your backend.
+Steps for Milestone 35📝
+Deploy your backend in any of the deployment service and get the backend deployment link.
+replace the localhost in frontend with the backend deployment lint.
+Deploy the frontend in any of the deployment service
+Make sure that both frontend and backend were correctly deployed and working properly.
+
 =======
 ### Run the app locally by cloning the repository, installing dependencies, and starting the server.
 
