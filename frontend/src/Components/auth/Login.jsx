@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useDispatch } from 'react-redux';
   import { setemail } from "../../store/userActions";
@@ -14,7 +14,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:9000/api/v2/user/login", { email, password }, {withCredentials: true,});
+      const response = await axios.post("http://localhost:9000/api/v2/user/login", { email, password }, {withCredentials: true});
       console.log(response.data);
       alert("Logged in successfully!");
       // Dispatch email to Redux state (token is now handled via cookies)
@@ -74,6 +74,7 @@ const Login = () => {
             <div>
               <button
                 type="submit"
+                onClick={handleSubmit}
                 className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
               >
                 Sign in

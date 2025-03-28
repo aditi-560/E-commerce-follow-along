@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Product from "../Components/auth/Product";
 import NavBar from "../Components/auth/nav";
+import axios from "../axiosConfig";
 
 export default function Home() {
   const [products, setProducts] = useState([]);
@@ -8,15 +9,9 @@ export default function Home() {
   const [error, setError] = useState(null); // For error handling
   
   useEffect(() => {
-    fetch("http://localhost:9000/api/v2/product/get-products")
+    axios.get("/api/v2/product/get-products",{withCredentials: true,})
       .then((res) => {
-        if (!res.ok) {
-          throw new Error(`HTTP error! status: ${res.status}`);
-        }
-        return res.json();
-      })
-      .then((data) => {
-        setProducts(data.products);
+        setProducts(res.data.products);
         setLoading(false);
       })
       .catch((err) => {
@@ -25,6 +20,7 @@ export default function Home() {
         setLoading(false);
       });
   }, []);
+
   if (loading) {
     return (
       <div className="text-center text-white mt-10">Loading products...</div>
